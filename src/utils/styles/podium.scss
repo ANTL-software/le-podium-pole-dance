@@ -77,3 +77,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,su
 .studio-reserve__booking button[type=submit],.studio-reserve__booking button.is-selected,.studio-reserve__booking button:hover,.podium-mobile-cta,.podium-admin nav button[aria-pressed=true],.member-account .member-primary,.member-avatar { background:var(--podium-rose); color:var(--podium-ink); }
 .studio-reserve__booking button.is-selected { border-color:var(--podium-blue); }
 .member-account { --member-accent:var(--podium-blue); }
+.podium-header>.podium-brand { grid-column:1; grid-row:1; }
+.member-account { font-family:var(--studio-font-body); }
+.member-sidebar>p,.member-page-title>p:first-child,.member-kicker { color:var(--podium-ink); }
+@media(min-width:761px) { .podium-header nav { grid-column:2; grid-row:1; } }
