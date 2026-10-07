@@ -1,0 +1,7 @@
+.studio-footer { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2rem; padding: clamp(2rem, 6vw, 5rem) clamp(1rem, 5vw, 4.75rem); }
+.studio-footer h2 { margin: 0; font-size: clamp(3rem, 7vw, 7rem); font-weight: 500; letter-spacing: -.12em; line-height: 1.05; }
+.studio-footer p { margin: 0 0 1.25rem; color: var(--studio-muted); font-size: .78rem; line-height: 1.65; }
+.studio-footer a { color: var(--studio-ink); }
+.studio-footer a { display: inline-flex; align-items: center; min-height: 44px; overflow-wrap: anywhere; }
+.studio-footer > * { min-width: 0; }
+@media (max-width: 760px) { .studio-footer { grid-template-columns: 1fr 1fr; padding: 3rem 1rem; }.studio-footer h2 { grid-column: 1 / -1; } }

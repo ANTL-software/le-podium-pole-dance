@@ -1,0 +1,4 @@
+.studio-button { display: inline-flex; width: fit-content; gap: 2.25rem; padding: 1rem 1.25rem; align-items: center; background: var(--studio-button); color: var(--studio-button-ink); font-size: .78rem; font-weight: 600; transition: background 160ms ease, transform 160ms ease; }
+.studio-button:hover { background: var(--studio-accent); transform: translateY(-.15rem); }
+.studio-button svg { width: 1.05rem; height: 1.05rem; flex: 0 0 auto; stroke-width: 2; }
+.studio-button { min-height: 48px; max-width: 100%; }

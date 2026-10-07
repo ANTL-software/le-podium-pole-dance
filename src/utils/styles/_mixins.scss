@@ -1,0 +1,21 @@
+@use "./variables" as vars;
+
+@mixin shell {
+  width: min(vars.$content-width, calc(100% - vars.$page-gutter));
+  margin-inline: auto;
+}
+
+@mixin mobile {
+  @media (max-width: vars.$breakpoint-mobile) {
+    @content;
+  }
+}
+
+@mixin section-space {
+  padding-block: vars.$section-space;
+}
+
+@mixin focus-ring {
+  outline: 0.2rem solid var(--color-focus);
+  outline-offset: 0.2rem;
+}

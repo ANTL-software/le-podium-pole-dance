@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page introuvable</title>
+    <script>
+      (function () {
+        var segments = window.location.pathname.split("/").filter(Boolean);
+        var isProjectPage = window.location.hostname.endsWith(".github.io") && segments.length > 1;
+        var basePath = isProjectPage ? "/" + segments[0] : "";
+        var routeSegments = isProjectPage ? segments.slice(1) : segments;
+        var route = routeSegments.join("/");
+        window.location.replace(basePath + "/#/" + route + window.location.search);
+      }());
+    </script>
+  </head>
+  <body>
+    <p>Redirection vers le site…</p>
+  </body>
+</html>

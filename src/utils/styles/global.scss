@@ -1,0 +1,17 @@
+@use "./mixins";
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap");
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--studio-canvas, #080808); color: var(--studio-ink, #f4f3ee); font-family: var(--studio-font-body, "Inter", Arial, sans-serif); }
+a { color: inherit; text-decoration: none; }
+a:focus-visible { @include mixins.focus-ring; }
+button { font: inherit; }
+button,a,input,select { -webkit-tap-highlight-color: transparent; }
+button,a { touch-action: manipulation; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .studio-ticker div { animation: none; }
+  .studio-button { transition: none; }
+}

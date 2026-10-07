@@ -1,0 +1,6 @@
+{
+  "id": "./", "name": "Le Podium Pole Dance", "short_name": "Le Podium", "lang": "fr",
+  "start_url": "./#/account", "scope": "./", "display": "standalone",
+  "background_color": "#f7f1e8", "theme_color": "#f7f1e8",
+  "icons": [{ "src": "podium-icon.png", "sizes": "192x192", "type": "image/png", "purpose": "any" }, { "src": "podium-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
